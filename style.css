@@ -1,0 +1,40 @@
+.popup {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.popup__container {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.popup__close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: skyblue;
+}
+
+.popup_display {
+    display: flex;
+}
+
+.popup_opened {
+    opacity: 1;
+}
